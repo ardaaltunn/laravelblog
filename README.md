@@ -14,7 +14,7 @@ Laravel Blog API, JWT (JSON Web Token) tabanlı kimlik doğrulama sistemi kullan
 - İlişkisel veritabanı tasarımı (Kullanıcı-Blog yazısı ilişkisi)
 - Detaylı API belgelendirmesi için Postman koleksiyonu
 
-## 🛠️ Kurulum
+##  Kurulum
 
 ### Gereksinimler
 - PHP 8.1+
