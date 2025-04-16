@@ -4,7 +4,7 @@ Tarih:16.04.2025
 
 Laravel Blog API, JWT (JSON Web Token) tabanlı kimlik doğrulama sistemi kullanan, kullanıcıların kayıt olup blog yazıları oluşturabileceği, düzenleyebileceği ve silebileceği bir RESTful API projesidir.
 
-## 📋 Proje Özellikleri
+##  Proje Özellikleri
 
 - **Laravel 10.x** ile geliştirilmiştir
 - **JWT (JSON Web Token)** ile güvenli kimlik doğrulama
@@ -55,7 +55,7 @@ php artisan migrate
 php artisan serve
 ```
 
-## 🔄 API Endpoints
+##  API Endpoints
 
 ### Kimlik Doğrulama (Auth)
 
@@ -76,7 +76,7 @@ php artisan serve
 | `/api/posts/{id}` | PUT | Yazı güncelleme | Evet (Sadece yazı sahibi) |
 | `/api/posts/{id}` | DELETE | Yazı silme | Evet (Sadece yazı sahibi) |
 
-## 📦 Veri Modelleri
+##  Veri Modelleri
 
 ### User
 - `id`: int, primary key
@@ -94,7 +94,7 @@ php artisan serve
 - `created_at`: timestamp
 - `updated_at`: timestamp
 
-## 🚀 API Kullanımı
+##  API Kullanımı
 
 ### Örnek İstekler
 
@@ -133,7 +133,7 @@ Authorization: Bearer {token}
 }
 ```
 
-## 🔒 Kimlik Doğrulama
+##  Kimlik Doğrulama
 
 API, JWT tabanlı bir kimlik doğrulama sistemi kullanır:
 
@@ -142,7 +142,7 @@ API, JWT tabanlı bir kimlik doğrulama sistemi kullanır:
 3. Korunan API endpoint'lerine istek yaparken Authorization header'ında token'ı gönderin:
    `Authorization: Bearer {token}`
 
-## 📋 Postman Koleksiyonu
+##  Postman Koleksiyonu
 
 API'yi test etmek için bir Postman koleksiyonu hazırlanmıştır. Bu koleksiyon:
 
@@ -152,20 +152,20 @@ API'yi test etmek için bir Postman koleksiyonu hazırlanmıştır. Bu koleksiyo
 
 Koleksiyonu şuradan indirebilirsiniz: `postman\Laravel Blog API.postman_collection.json`
 
-## 📝 Notlar
+##  Notlar
 
 - JWT token'ları 1 saat süreyle geçerlidir
 - Blog yazılarını yalnızca giriş yapmış kullanıcılar oluşturabilir
 - Bir yazıyı yalnızca o yazıyı oluşturan kullanıcı düzenleyebilir veya silebilir
 
-## 📚 Kullanılan Teknolojiler
+##  Kullanılan Teknolojiler
 
 - Laravel 10.x
 - tymon/jwt-auth 2.0
 - MySQL
 - RESTful API
 
-## 🔍 Proje Yapısı
+##  Proje Yapısı
 
 - `app/Http/Controllers/API/AuthController.php`: Kimlik doğrulama işlemlerini yönetir
 - `app/Http/Controllers/API/PostController.php`: Blog yazısı işlemlerini yönetir
